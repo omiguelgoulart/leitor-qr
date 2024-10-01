@@ -1,14 +1,10 @@
 {
-  "name": "leitor-qr",
-  "version": "1.0.0",
-  "description": "Projeto para leitura de QR code",
-  "main": "index.js",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
   "scripts": {
-    "deploy": "gh-pages -d ."
-  },
-  "dependencies": {
-    "gh-pages": "^3.2.3"
-  },
-  "author": "Miguel Goulart",
-  "license": "MIT"
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
 }
